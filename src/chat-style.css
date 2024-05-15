@@ -84,8 +84,8 @@
     background-color: #1f2126;
     border: 1px solid #1f2126;
     height: 40px;
-    width: 500px;
-    padding: 1px 35px;
+    min-width: 85%;
+    padding: 1px 50px;
     border-radius: 5px;
     color: gainsboro;
     text-decoration: none;
