@@ -1,19 +1,23 @@
 import React from 'react'
 import '../chat-style.css'
-import { SearchOutline } from 'react-ionicons'
+// import { SearchOutline } from 'react-ionicons'
 
 export const ChatComponent = ({ chatValue }) => {
     return (
-        <div className='chat-container'>
+        <div className='chat-component'>
             <header>
                 <img srcSet={chatValue.avatar} alt=''></img>
                 <span>{chatValue.username}</span>
-
-                {/* <SearchOutline color={'#61dafb'} height="25px" width="25px" style={{poistion: "absolute", right: "0", margin: "5px", cursor: "pointer"}}/> */}
             </header>
+            
+            <div className='chat-container'>
+
+            </div>
 
             <footer>
+                <input placeholder="Write a message here" class="chat-input" type="text"> 
 
+                </input>
             </footer>
         </div>
     )

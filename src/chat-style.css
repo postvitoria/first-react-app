@@ -1,17 +1,17 @@
-.chat-container {
+.chat-component {
 	height: 100vh;
 }
 
-.chat-container header {
+.chat-component header {
     position: relative;
-    max-width: 147vh;
-    height: 12vh;
+    min-width: max-content;
+    min-height: 12vh;
     border-radius: 5px;
     border-bottom: 2px solid #1f2126;
     /* box-shadow: -5px 12px 15px rgba(0, 0, 0, 0.5); */
 }
 
-.chat-container header img {
+.chat-component header img {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -22,7 +22,7 @@
     margin-left: 20px;
 }
 
-.chat-container header span {
+.chat-component header span {
     position: absolute;
     top: 30%;
     text-align: center;
@@ -36,14 +36,22 @@
 	white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
 }
 
-.chat-container footer {
-    position: absolute;
+.chat-container {
+    margin: 0 auto;
+    min-width: max-content;
+    min-height: 75vh;
+    background: url("");
+}
+
+.chat-component footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     bottom: 5px;
-    width: 100vh;
-    height: 12vh;
+    min-width: max-content;
+    min-height: 12vh;
     border-top: 2px solid #1f2126;
-    /* border-radius: 5px; */
-    /* box-shadow: -5px -12px 15px rgba(0, 0, 0, 0.5); */
 }
 
 .placeholder-container {
@@ -69,4 +77,19 @@
     font-size: 20px;
     color: #4eabc5;
     text-align: center;
+}
+
+.chat-input {
+    position: relative;
+    background-color: #1f2126;
+    border: 1px solid #1f2126;
+    height: 40px;
+    width: 500px;
+    padding: 1px 35px;
+    border-radius: 5px;
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
 }

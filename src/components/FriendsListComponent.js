@@ -20,7 +20,7 @@ export const FriendList = ({ onFriendClick }) => {
     };
 
     return (
-        <div style={{borderRight: "2px solid #1f2126"}}>
+        <div style={{borderRight: "2px solid #1f2126", minHeight: "100%"}}>
             <div className="personal-info-container">
                 <img srcSet={user.avatar} alt=''></img>
                 <span className="personal-info-username">{user.username}</span>

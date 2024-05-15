@@ -20,7 +20,7 @@ body {
 .App-header {
 	display: grid;
 	grid-auto-columns: 0fr 0.25fr 1fr;
-	gap: 5px 5px;
+	gap: 1px 1px;
 	align-items: center;
 	grid-template-areas: "left1 center-div right1";
 	background-color: #282c34;
