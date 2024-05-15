@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { ChatComponent } from './components/ChatComponent';
+import { FriendList } from './components/FriendsListComponent';
+import { PlaceholderComponent } from './components/PlaceholderComponent';
+import { SideMenuComponent } from './components/SideMenuComponent';
+import React, { useState } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [selectedFriend, setSelectedFriend] = useState(null);
+
+	const handleFriendClick = (friend) => {
+		setSelectedFriend(friend);
+	};
+
+	return (
+		<div className="App">
+			<header className="App-header">
+				<SideMenuComponent />
+				<FriendList onFriendClick={handleFriendClick}/>
+				{selectedFriend ? <ChatComponent chatValue={selectedFriend} /> : <PlaceholderComponent />}
+			</header>
+		</div>
+	);
 }
 
 export default App;

@@ -1,0 +1,71 @@
+.chat-container {
+	height: 100vh;
+}
+
+.chat-container header {
+    position: relative;
+    max-width: 147vh;
+    height: 12vh;
+    border-radius: 5px;
+    /* border-bottom: 2px solid #1f2126; */
+    /* box-shadow: -5px 12px 15px rgba(0, 0, 0, 0.5); */
+}
+
+.chat-container header img {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 80px;
+    margin-left: 20px;
+}
+
+.chat-container header span {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+	margin-left: 115px;
+	font-size: 23px;
+	color: gainsboro;
+	font-weight: bold;
+	max-width: 220px; /* Establece el ancho máximo del span */
+	overflow: hidden; /* Oculta el texto que supere el ancho máximo */
+	text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para el texto que se ha cortado */
+	white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+}
+
+.chat-container footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100vh;
+    height: 12vh;
+    border-radius: 5px;
+    box-shadow: -5px -12px 15px rgba(0, 0, 0, 0.5);
+}
+
+.placeholder-container {
+    position: absolute;
+    user-select: none;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.placeholder-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #61dafb;
+    text-align: center;
+}
+
+.placeholder-subtitle {
+    font-size: 20px;
+    color: #4eabc5;
+    text-align: center;
+}
