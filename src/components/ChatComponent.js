@@ -12,9 +12,9 @@ export const ChatComponent = ({ chatValue }) => {
                 {/* <SearchOutline color={'#61dafb'} height="25px" width="25px" style={{poistion: "absolute", right: "0", margin: "5px", cursor: "pointer"}}/> */}
             </header>
 
-            {/* <footer>
+            <footer>
 
-            </footer> */}
+            </footer>
         </div>
     )
 }

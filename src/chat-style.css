@@ -7,7 +7,7 @@
     max-width: 147vh;
     height: 12vh;
     border-radius: 5px;
-    /* border-bottom: 2px solid #1f2126; */
+    border-bottom: 2px solid #1f2126;
     /* box-shadow: -5px 12px 15px rgba(0, 0, 0, 0.5); */
 }
 
@@ -41,8 +41,9 @@
     bottom: 5px;
     width: 100vh;
     height: 12vh;
-    border-radius: 5px;
-    box-shadow: -5px -12px 15px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #1f2126;
+    /* border-radius: 5px; */
+    /* box-shadow: -5px -12px 15px rgba(0, 0, 0, 0.5); */
 }
 
 .placeholder-container {

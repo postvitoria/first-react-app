@@ -27,7 +27,7 @@ body {
 	min-height: 100vh;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	overflow-y: hidden;
+	/* overflow-y: hidden; */
 	color: gainsboro;
 }
 
@@ -35,33 +35,45 @@ body {
 	color: #61dafb;
 }
 
-/* .friendlist-container {
-	border-right: 2px solid gainsboro;
-} */
-
 .side-menu-container {
     position: relative;
-    min-height: 100%;
+    height: 100vh; /* Ajusta la altura del contenedor al 100% del viewport */
     width: 70px;
     grid-area: left1;
     background-color: #1f2126;
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+    overflow-x: hidden;
+    max-height: calc(100vh - 5px); /* Altura máxima ajustada para evitar que el contenedor se extienda más allá del viewport */
+	scrollbar-color: #61dafb rgba(255, 255, 255, 0);
+	scrollbar-width: none;
+}
+
+.side-menu-item-container {
+	position: relative;
+    user-select: none;
+	padding: 8px;
+}
+
+
+.side-menu-item-container:first-child {
+	background-image: linear-gradient(to right, transparent 0, transparent 5px, gainsboro 5px, gainsboro 100%);
+	background-position: bottom;
+	background-size: 70% 1px;
+	background-repeat: no-repeat;
 }
 
 .side-menu-item {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px;
-    height: 50px;
+	margin: auto;
     border-radius: 50px;
-    margin-top: 10px;
-    user-select: none;
-    cursor: pointer;
+	transition: transform .2s; /* Animation */
+	cursor: pointer;
+	width: 50px;
+    height: 50px;
 }
 
-.side-menu-item:first-child {
-	width: 60px;
-	height: 60px;
+.side-menu-item:hover {
+	transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .friends-container {

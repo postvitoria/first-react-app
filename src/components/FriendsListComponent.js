@@ -9,7 +9,7 @@ export const FriendList = ({ onFriendClick }) => {
 
     const friends = [
         {username: "Kailopi", description: "Mondogo 💖", avatar: "https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/oUPMCbQzfDEI87DrADtlWsC53EBJF1AfPNAIZs~tplv-tej9nj120t-origin.webp"},
-        {username: "F.L.O.W.E.R.S", description: "soy gay 🏳️‍🌈", avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQug8bYxXaQrOXJI04GDaIgu0LmZFEvNzRnJiiHreZ8Jw&s"},
+        {username: "F.L.O.W.E.R.S", description: "Meta Quest 3", avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQug8bYxXaQrOXJI04GDaIgu0LmZFEvNzRnJiiHreZ8Jw&s"},
         {username: "Manuelprots", description: "Night Gangwars CEO", avatar: "https://i.pinimg.com/originals/6e/c5/9a/6ec59a46147bb7e1e21a748cb4ac63bd.gif"},
         {username: "Efimael", description: "Pito de mono", avatar: "https://wallpapers-clan.com/wp-content/uploads/2022/09/darling-in-the-franxx-zero-two-pfp-1.jpg"},
         {username: "NachoASD", description: "Marbella Developer 🖥️", avatar: "https://encrypted-tbn0.gstatic.com/avatars?q=tbn:ANd9GcT3GoEytKSFXLLRYDF3L9gqqgJV1IwW464eT4KE7fGbRQ&s"},
