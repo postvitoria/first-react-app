@@ -54,7 +54,6 @@ body {
 	padding: 8px;
 }
 
-
 .side-menu-item-container:first-child {
 	background-image: linear-gradient(to right, transparent 0, transparent 5px, gainsboro 5px, gainsboro 100%);
 	background-position: bottom;
@@ -83,8 +82,7 @@ body {
 	user-select: none;
 	overflow-y: auto;
 	overflow-x: hidden;
-	scrollbar-color: #61dafb rgba(255, 255, 255, 0);
-	scrollbar-width: thin;
+	scrollbar-width: none;
 }
 
 .friends-title {

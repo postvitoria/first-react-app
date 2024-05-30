@@ -1,4 +1,5 @@
 import { PersonAddOutline, SettingsOutline, StorefrontOutline } from 'react-ionicons'
+import { PlaceholderComponent } from './PlaceholderComponent';
 
 export const FriendList = ({ onFriendClick }) => {
     const user = {
@@ -15,7 +16,7 @@ export const FriendList = ({ onFriendClick }) => {
         {username: "NachoASD", description: "Marbella Developer 🖥️", avatar: "https://encrypted-tbn0.gstatic.com/avatars?q=tbn:ANd9GcT3GoEytKSFXLLRYDF3L9gqqgJV1IwW464eT4KE7fGbRQ&s"},
     ]
 
-    const handleClick = (newValue) => {
+    const handleFriendClick = (newValue) => {
         onFriendClick(newValue);
     };
 
@@ -38,7 +39,7 @@ export const FriendList = ({ onFriendClick }) => {
                 {
                     friends.map((friend, index) => {
                         return (
-                            <div className="friend-item" key={index} onClick={() => handleClick(friend)}> 
+                            <div className="friend-item" key={index} onClick={() => handleFriendClick(friend)}> 
                                 <img srcSet={friend.avatar} alt=""/>
                                 <span>{friend.username}</span>
                                 <p>{friend.description}</p>

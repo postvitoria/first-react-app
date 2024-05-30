@@ -39,8 +39,11 @@
 .chat-container {
     margin: 0 auto;
     min-width: max-content;
-    min-height: 75vh;
-    background: url("");
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+	scrollbar-width: none;
+    /* background: url(""); */
 }
 
 .chat-component footer {
@@ -92,4 +95,58 @@
     font-size: 16px;
     cursor: pointer;
     outline: none;
+}
+
+.message-container {
+    width: 100%;
+    margin: 2px 2px; /* Ajuste aquí para un espaciado uniforme */
+    transition: 1s;
+    clear: both; /* Agregado para evitar la disposición en línea */
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+.message-container:first-child {
+    margin-top: 15px;
+}
+
+.message-user-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-right: 0; 
+    margin-left: 20px;
+    float: left;
+    user-select: none;
+}
+
+.message-user-icon.yours {
+    float: right;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.message {
+    background-color: #0093FF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    max-width: 500px;
+    word-wrap: break-word;
+    display:inline-block;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+.message p {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    max-width: 250px;
+}
+
+.message-container.yours .message {
+    margin-left: 0; 
+    margin-right: 20px;
+    float: right;
 }
